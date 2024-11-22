@@ -33,8 +33,8 @@
 					<a href="#" class="c-immo-card">
 						<div class="c-immo-card__imgcontainer">
 							<img src="{{house.cover.one().url()}}" alt="" class="c-immo-card__img">
-							<div class="c-immo-card__tag c-immo-card__tag--sale">
-								<p>For sale</p>
+							<div class="c-immo-card__tag {{house.state == 'sale' ? 'c-immo-card__tag--sale' : 'c-immo-card__tag--rent' }}">
+								<p>{{house.state}}</p>
 							</div>
 
 						</div>
